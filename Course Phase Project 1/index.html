@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Course Phase Project-One</title>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href="main.css" rel="stylesheet">
+    <script src="main.js" async></script>
+    <script src="geolocationapi.js" async></script>
+</head>
+
+<body>
+    <center>
+        <main>
+            <header>
+                <h1>To-Do List</h1>
+            </header>
+            <div class="image">
+                <img src="il_340x270.933332459_oyia.jpg" alt="todo-list img">
+            </div>
+
+            <!-- text area to enter new item-->
+            <div id="todo">
+                
+                <input type='text' id='inputtext' class="text" placeholder="Add Item..." />
+                <!-- buttons for add and remove items-->
+                <button type="button" id="addbtn" class="button">Add Item</button>
+                <button type="button" id="removebtn" class="button">Remove Item</button>
+
+                <!-- all new items listed into the ul-->
+                <ul id="itemlist"></ul>
+        </main>
+    </center>
+
+    <!-- Geolocation API -->
+    <section>
+        <button id="find-me">Show my location</button>
+        <br/>
+        <p id="status"></p>
+        <a id="map-link" target="_blank"></a>
+    </section>
+</body>
+
+</html>
